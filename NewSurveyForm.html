@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action="https://survey-form.freecodecamp.rocks">
+      <fieldset>
+        <label id="name-label">Enter your name<input id="name" type="text" required placeholder="name"></input></label>
+          <label id="email-label">Enter your email<input id="email" type="email" required placeholder="email"></input></label>
+        <label id="number-label">Enter your number<input id="number" type="number" min="8" max="36" required placeholder="number"></input></label>
+      </fieldset>
+      <select id="dropdown">
+      <option></option>
+      <option></option></select>
+      <fieldset>
+        <label id="account-label">Personal Account <input type="radio" name="account-type" class="inline"
+        value="personal"></input></label>
+        <label id="account-label">Business Account<input type="radio" name="account-type" class="inline" value="business"></input></label></fieldset>
+        <fieldset><label for="experience"> Your experience with the account use:<textarea id="experience" rows="3" cols="30" placeholder="I think the account is ..."></textarea></label>
+      </fieldset>
+      <fieldset><label for="age">Age 18 or above<input type="checkbox" class="inline" value="age"></input></label>
+      <label for="employment status">Employed<input type="checkbox" class="inline" value="employment status"</label>
+      </fieldset>
+    <input id="submit" type="submit" value="Submit"></input>
+    </form>
+  </body>
+</html>
